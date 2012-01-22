@@ -40,7 +40,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 #    ro.vold.switchablepair=/mnt/sdcard,/mnt/emmc
 
 # Release name and versioning
-PRODUCT_RELEASE_NAME := Vibrant
+PRODUCT_RELEASE_NAME := GalaxyS4G
 PRODUCT_VERSION_DEVICE_SPECIFIC :=
 -include vendor/cyanogen/products/common_versions.mk
 
