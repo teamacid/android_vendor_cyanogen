@@ -1,5 +1,5 @@
-# Inherit AOSP device configuration for galaxys4g.
-$(call inherit-product, device/samsung/galaxys4g/full_galaxys4g.mk)
+# Inherit AOSP device configuration for galaxys4gmtd.
+$(call inherit-product, device/samsung/galaxys4gmtd/full_galaxys4gmtd.mk)
 
 # Inherit some common cyanogenmod stuff.
 $(call inherit-product, vendor/cyanogen/products/common_full.mk)
@@ -10,9 +10,9 @@ $(call inherit-product, vendor/cyanogen/products/gsm.mk)
 #
 # Setup device specific product configuration.
 #
-PRODUCT_NAME := cyanogen_galaxys4g
+PRODUCT_NAME := cyanogen_galaxys4gmtd
 PRODUCT_BRAND := samsung
-PRODUCT_DEVICE := galaxys4g
+PRODUCT_DEVICE := galaxys4gmtd
 PRODUCT_MODEL := SGH-T959V
 PRODUCT_MANUFACTURER := Samsung
 PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=samsung BUILD_ID=VUVKJ6 BUILD_FINGERPRINT=samsung/SGH-T959V/SGH-T959V:2.3.6/GINGERBREAD/VUVKJ6:user/release-keys PRIVATE_BUILD_DESC="SGH-T959V-user 2.3.6 GINGERBREAD VUVKJ6 release-keys"
@@ -20,10 +20,10 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=samsung BUILD_ID=VUVKJ6 BUILD_FINGE
 # Build kernel
 #PRODUCT_SPECIFIC_DEFINES += TARGET_PREBUILT_KERNEL=
 #PRODUCT_SPECIFIC_DEFINES += TARGET_KERNEL_DIR=kernel-samsung
-#PRODUCT_SPECIFIC_DEFINES += TARGET_KERNEL_CONFIG=cyanogen_galaxys4g_defconfig
+#PRODUCT_SPECIFIC_DEFINES += TARGET_KERNEL_CONFIG=cyanogen_galaxys4gmtd_defconfig
 
 # Extra galaxys overlay
-PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/galaxys4g
+PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/galaxys4gmtd
 
 # Add the FM app
 # PRODUCT_PACKAGES += FM
@@ -40,7 +40,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 #    ro.vold.switchablepair=/mnt/sdcard,/mnt/emmc
 
 # Release name and versioning
-PRODUCT_RELEASE_NAME := GalaxyS4G
+PRODUCT_RELEASE_NAME := galaxys4gmtd
 PRODUCT_VERSION_DEVICE_SPECIFIC :=
 -include vendor/cyanogen/products/common_versions.mk
 
